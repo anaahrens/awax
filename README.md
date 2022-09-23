@@ -1,7 +1,5 @@
 # Projeto AWAX 
 
-![previwer](./.github/preview.png)
-
 > From scratch:
 
 Copia de um template (gratuito) do zero com a B7WEB.  

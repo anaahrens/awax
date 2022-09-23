@@ -818,10 +818,10 @@ header {
 }
 
 
+/* ==== TABLET ==== */
 
 
-
-@media (min-width:450px) and (max-width:800px) {
+@media (min-width:450px) and (max-width:920px) {
     .logo {
         margin-left: 30px;
         margin-top: 10px;
@@ -904,6 +904,153 @@ header {
     .section-map {
         padding-left: 30px;
         padding-right: 30px;
+    }
+
+    .section-map--area{
+        width: auto;
+    }
+
+    .section-map--info {
+        width: auto;
+    }
+
+    .section-map--info-item {
+        margin-bottom: 20px; 
+    }
+
+    .section-map--info-item:last-child {
+        margin-bottom: 0;
+    }
+
+}
+
+
+
+/* ==== CELULAR ==== */
+
+
+
+
+@media (max-width:450px) {
+    .logo {
+        margin-left: 30px;
+        margin-top: 10px;
+    }
+    
+    .menu-opener {
+        display:block;
+        width: 40px;
+        margin-right: 30px;
+    }
+    
+    nav {
+        position: absolute;
+        z-index: 99;
+        background-color: rgba(0, 0, 0, 0.9);
+        width: 80vw;
+        height: calc(100vh - 100px);
+        top: 100px;
+        right: 0;
+    }
+
+    .menu ul {
+        flex-direction: column;
+    }
+
+    .menu li a {
+        font-weight: bold;
+        height: 60px;
+        font-size: 20px;
+        margin-left: 30px;
+        border: 0;
+    }
+
+    .menu li.active a {
+        border: 0;
+        color: #b28756;
+    }
+
+    .banner h1 {
+        font-size: 30px;
+    }
+
+    .banner h2 {
+        font-size: 17px;
+    }
+
+    .section-aboutus {
+        flex-direction: column;
+    }
+
+    .section-aboutus--left {
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-bottom: 30px;
+    }
+
+    .section-aboutus--right {
+        width: auto;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .section-aboutus--right img {
+        width: 100%;
+    }
+
+    .section-services {
+        flex-wrap: wrap;
+        margin: 10px;
+    }
+
+    .section-service {
+        min-width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .section-service:nth-child(1) {
+        border-left: none;
+    }
+
+    .section-service:nth-child(2) {
+        border-right: none;
+    }
+
+    .section-service:nth-child(4) {
+        border-right: none;
+    }
+
+    .section-projects--photo {
+        width: 320px;
+    }
+
+    .section-projects--photoarea {
+        width: 300px;
+        height: 190px;
+    }
+
+    
+    .section-projects--filters {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .section-team {
+        max-width: 240px;
+    }
+
+    .default.section-companies,
+    .default.light.price,
+    .default.light.premium,
+    .default.dark.facts, 
+    .section-share,
+    .default.light.contact {
+        display: none;
+    }
+    
+    .section-map {
+        padding: 0;
+        padding-bottom: 250px;
     }
 
     .section-map--area{
